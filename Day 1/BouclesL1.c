@@ -75,16 +75,17 @@ int main() {
 
 // Challenge 5 : Calcul de la Puissance
 #include <stdio.h>
-#include <math.h>
 int main() {
-    int b,p;
-    printf("Entrer la base : ");
+    int b,i,e, r = 1;
+    printf("b : "); 
     scanf("%d", &b);
-    printf("Entrer la puissance : ");
-    scanf("%d", &p);
-    
-    int poww = pow(b, p);
-    printf("%d^%d = %d", b,p , poww);
+    printf("e : "); 
+    scanf("%d", &e);
+    for (i = 0 ; i < e ; i++) 
+    {
+        r *= b;
+    }
+    printf("%d ^ %d = %d", b , e , r);
     return 0;
 }
 
